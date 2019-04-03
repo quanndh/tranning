@@ -1,0 +1,60 @@
+.btn{
+    margin: 20px; 
+    background-color: #66ccff; 
+    color: white; height:50px; 
+    width: 100px; 
+    border-radius: 2px;
+}
+.container{
+    border-radius: 4px;
+    border: 0.5px solid #b0babf;
+    
+   
+}
+.status{
+    width: 600px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border-bottom: 0.5px solid #b0babf;
+    margin: 5px
+}
+img{
+    height: 50px;
+    widows: 50px;
+    border-radius: 2px;
+    margin-right: 20px;
+}
+.info{
+    display: flex;
+
+}
+.username{
+    color: #0da6f2;
+    align-self: flex-start;
+    font-weight: bold
+}
+.from{
+    margin-left: 5px;
+    color: #b0babf
+}
+.time{
+    color: #b0babf;
+    margin-left: 250px;
+}
+.content{
+    width: 500px;
+    align-self: flex-end;
+    position: absolute;
+    color: black
+   
+}
+.cmt{
+    background-color: cornsilk
+}
+input{
+    width: 490px;
+    border-radius: 4px;
+    height: 20px;
+}
