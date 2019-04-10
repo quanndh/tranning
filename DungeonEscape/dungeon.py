@@ -78,7 +78,7 @@ while True:
 
             if playerX == keyX and playerY == keyY:
                 keys -= 1
-
+                            
     map[endX][endY] = "E"
 
     printMap(map)
