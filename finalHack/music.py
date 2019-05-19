@@ -3,8 +3,6 @@ from youtube_dl import YoutubeDL
 from pyglet.media import Source, Player, load
 import pyglet
 
-
-
 opt = [
     {'1' : 'Show all songs'},
     {'2' : 'Show show detail'},
@@ -13,7 +11,7 @@ opt = [
     {'5' : 'Exit'}
 ]
 
-songList = []
+songList = [] 
 dataList = []
 
 while True:
