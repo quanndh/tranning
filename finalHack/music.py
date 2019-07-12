@@ -83,7 +83,7 @@ while True:
         search = input("Search song: ")
 
         optionsExtract = {
-            'default_search' : 'ytsearch3'
+            'default_search' : 'ytsearch4'
         }
 
         ydl = YoutubeDL(optionsExtract)

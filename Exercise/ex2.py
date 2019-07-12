@@ -16,6 +16,9 @@ price = {
     'ALIENWARE' : 1000
 }
 
+for key in shop:
+    print(key, shop[key])
+
 print(shop['MACBOOK'])
 
 shop['TOSHIBA'] = 10

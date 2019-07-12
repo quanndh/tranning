@@ -1,4 +1,7 @@
-from random import randint
+# from random import randint
+# a = randint(0, 9)
+# print(a)
+
 # res = input("Radius?")
 # r = float(res)
 # area = 3.14 * r ** 2
@@ -54,20 +57,66 @@ from random import randint
 #     print(char)
 #     wordArr.pop(index)
 
-words = ['abcd', 'qwer', 'played', 'python']
-ask = randint(0, len(words) - 1)
-word = words[ask]
-wordArr = list(word)
-char = []
-while len(wordArr) > 0:
-    index = randint(0, len(wordArr) - 1)
-    char.append(wordArr[index])
-    wordArr.pop(index)
-print(*char, sep = ' ')
-res = input("Guess: ")
-ans = str(res)
-if ans == words[ask]:
-    print('Dung')
-else: print('Sai')
+# words = ['abcd', 'qwer', 'played', 'python']
+# ask = randint(0, len(words) - 1)
+# word = words[ask]
+# wordArr = list(word)
+# char = []
+# while len(wordArr) > 0:
+#     index = randint(0, len(wordArr) - 1)
+#     char.append(wordArr[index])
+#     wordArr.pop(index)
+# print(*char, sep = ' ')
+# res = input("Guess: ")
+# ans = str(res)
+# if ans == words[ask]:
+#     print('Dung')
+# else: print('Sai')
+
+# for i in range(6):
+#     for i in range(360):
+#         forward(2)
+#         left(1)
+
+#     left(60)
+
+# speed(1)
+
+# mainloop()
+
+import datetime
+import pyglet
+from pyglet.media import Source, Player, load
+
+alarm = int(input("alarm: "))
+m = datetime.datetime.now().minute
+while True:
+    if m == alarm:
+        mp3File = "crowd-cheering.mp3"
+
+        player = Player()
+        source = load(mp3File)
+        player.queue(source)
+        player.play()
+        while True:
+            interact = (input("play, pause or stop:"))
+            if interact == "play":
+                player.play()
+            elif interact == "pause":
+                player.pause()
+            elif interact == "stop":
+                player.pause()
+                break
+        break
+    else:
+        m = datetime.datetime.now().minute
+    
+
+
+    
+    
+    
+
+
 
 
